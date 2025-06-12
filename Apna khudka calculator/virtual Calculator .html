@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Scientific Calculator</title>
+    <link rel="stylesheet" href="Css code and commands.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <div class="theme-toggle">
+            <button id="theme-btn">🌙</button>
+        </div>
+        <div class="calculator">
+            <div class="display">
+                <input type="text" id="result" readonly>
+            </div>
+            <div class="buttons">
+                <!-- Memory Functions -->
+                <button onclick="memoryClear()">MC</button>
+                <button onclick="memoryRecall()">MR</button>
+                <button onclick="memoryAdd()">M+</button>
+                <button onclick="memorySubtract()">M-</button>
+                <button onclick="toggleDegrees()">Deg/Rad</button>
+
+                <!-- Basic Functions -->
+                <button onclick="clearDisplay()">AC</button>
+                <button onclick="deleteLast()">DEL</button>
+                <button onclick="appendOperator('(')">(</button>
+                <button onclick="appendOperator(')')">)</button>
+                <button onclick="appendOperator('/')">÷</button>
+
+                <button onclick="appendOperator('7')">7</button>
+                <button onclick="appendOperator('8')">8</button>
+                <button onclick="appendOperator('9')">9</button>
+                <button onclick="appendOperator('*')">×</button>
+                <button onclick="appendFunction('sqrt(')">√</button>
+
+                <button onclick="appendOperator('4')">4</button>
+                <button onclick="appendOperator('5')">5</button>
+                <button onclick="appendOperator('6')">6</button>
+                <button onclick="appendOperator('-')">−</button>
+                <button onclick="appendFunction('pow(')">xʸ</button>
+
+                <button onclick="appendOperator('1')">1</button>
+                <button onclick="appendOperator('2')">2</button>
+                <button onclick="appendOperator('3')">3</button>
+                <button onclick="appendOperator('+')">+</button>
+                <button onclick="appendFunction('factorial(')">n!</button>
+
+                <button onclick="appendOperator('0')">0</button>
+                <button onclick="appendOperator('.')">.</button>
+                <button onclick="appendConstant('Math.PI')">π</button>
+                <button onclick="appendConstant('Math.E')">e</button>
+                <button onclick="calculate()">=</button>
+
+                <!-- Scientific Functions -->
+                <button onclick="appendTrig('sin')">sin</button>
+                <button onclick="appendTrig('cos')">cos</button>
+                <button onclick="appendTrig('tan')">tan</button>
+                <button onclick="appendTrig('asin')">asin</button>
+                <button onclick="appendTrig('acos')">acos</button>
+
+                <button onclick="appendTrig('atan')">atan</button>
+                <button onclick="appendTrig('sinh')">sinh</button>
+                <button onclick="appendTrig('cosh')">cosh</button>
+                <button onclick="appendTrig('tanh')">tanh</button>
+                <button onclick="appendFunction('log10(')">log</button>
+            </div>
+        </div>
+        <div class="history-panel">
+            <h3>History</h3>
+            <ul id="history-list"></ul>
+        </div>
+    </div>
+    <!-- ... existing HTML ... -->
+<div class="calculator">
+    <!-- ... existing display and buttons ... -->
+    <div class="buttons">
+        <!-- ... existing buttons ... -->
+        <button onclick="appendFunction('Math.pow(')">xʸ</button>
+        <button onclick="appendFunction('Math.sqrt(')">√x</button>
+        <button onclick="appendFunction('Math.cbrt(')">∛x</button>
+        <button onclick="appendFunction('Math.pow(')">x²</button>
+        <button onclick="appendFunction('Math.pow(')">x³</button>
+        <!-- ... other buttons ... -->
+    </div>
+</div>
+<div class="graph-container">
+    <h3>Graph Plot</h3>
+    <canvas id="graphCanvas"></canvas>
+</div>
+<!-- ... existing HTML ... -->
+    <script src="thora sa javascript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>
